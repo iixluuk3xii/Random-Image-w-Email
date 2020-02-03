@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../scss/index.scss"
+	],
+	"sourcesContent": [
+		"*{\r\n    background-color: black;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAA;EACG,gBAAgB,EAAE,KAAK;CAC1B"
+}
