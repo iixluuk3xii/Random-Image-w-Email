@@ -1,6 +1,194 @@
 /* line 1, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
 * {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 9, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.kitten {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 450px;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 17, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.hearts {
+  position: absolute;
+  width: 300px;
+  right: 520px;
+  bottom: 90px;
+}
+
+/* line 24, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.container {
+  margin-left: 200px;
+  float: left;
+}
+
+/* line 29, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+/* line 36, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline {
+  background: #cc6633;
+  background: radial-gradient(circle, #dfab5d 0%, #aa742e 30%, #daa868 100%);
+  position: relative;
+  height: 550px;
+  width: 750px;
+  margin: -30px auto -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* line 48, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .break1,
+.frame--outline .break2 {
+  content: "";
+  height: 5px;
+  width: 1000px;
+  position: absolute;
+  background-color: #0f0f0f;
+}
+
+/* line 57, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .break1 {
+  transform: rotate(36.1deg);
+}
+
+/* line 61, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .break2 {
+  transform: rotate(-36.1deg);
+}
+
+/* line 65, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .frame--inline {
+  border: #f0f0f0 3px solid;
+  background-color: #f0f0f0;
+  height: 420px;
+  width: 620px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+
+/* line 78, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .frame--inline .image {
+  height: 400px;
+  width: 600px;
   background-color: black;
+  border-radius: 10px;
+}
+
+/* line 84, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.frame--outline .frame--inline .image .kitten-image {
+  border-radius: 10px;
+}
+
+/* line 91, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.instruction--field {
+  margin-top: 35px;
+}
+
+/* line 95, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+label {
+  margin-right: 10px;
+}
+
+/* line 99, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+input {
+  width: 600px;
+  background-color: #f0f0f0;
+  color: #0f0f0f;
+  height: 30px;
+}
+
+/* line 106, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.instruction--btn {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+/* line 112, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.btn {
+  height: 80px;
+  width: 170px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0f0f;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* line 121, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.btn:focus {
+  outline: 0;
+}
+
+/* line 125, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.btn:hover {
+  background-color: #afafaf;
+}
+
+/* line 128, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.btn:disabled {
+  background-color: red;
+}
+
+/* line 133, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.info {
+  float: right;
+  margin-right: 200px;
+}
+
+/* line 137, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.info #about {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* line 144, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.info .list {
+  padding: 20px;
+  position: absolute;
+  right: 200px;
+  border: #f0f0f0 solid;
+  width: 702.313px;
+  height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* line 154, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+.info .list a {
+  display: block;
+  margin: 10px 0;
+}
+
+/* line 161, ../../Documents/GitHub/Random-Image-w-Email/src/scss/index.scss */
+#array {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=index.css.map */

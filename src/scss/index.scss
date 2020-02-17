@@ -1,3 +1,165 @@
-*{
-    background-color: black;
+* {
+    background-color: rgb(15, 15, 15);
+    color: rgb(240, 240, 240);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.kitten {
+    position: absolute;
+    transform: scaleX(-1);
+    width: 450px;
+    right: 0;
+    bottom: 0;
+}
+
+.hearts {
+    position: absolute;
+    width: 300px;
+    right: 520px;
+    bottom: 90px;
+}
+
+.container {
+    margin-left: 200px;
+    float: left;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+.frame--outline {
+    background: rgb(204, 102, 51);
+    background: radial-gradient(circle, rgb(223, 171, 93) 0%, rgb(170, 116, 46) 30%, rgb(218, 168, 104) 100%);
+    position: relative;
+    height: 550px;
+    width: 750px;
+    margin: -30px auto -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .break1,
+    .break2 {
+        content: "";
+        height: 5px;
+        width: 1000px;
+        position: absolute;
+        background-color: rgb(15, 15, 15);
+    }
+
+    .break1 {
+        transform: rotate(36.1deg);
+    }
+
+    .break2 {
+        transform: rotate(-36.1deg);
+    }
+
+    .frame--inline {
+        border: rgb(240, 240, 240) 3px solid;
+        background-color: rgb(240, 240, 240);
+        height: 420px;
+        width: 620px;
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+
+        .image {
+            height: 400px;
+            width: 600px;
+            background-color: black;
+            border-radius: 10px;
+
+            .kitten-image {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.instruction--field {
+    margin-top: 35px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 600px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(15, 15, 15);
+    height: 30px;
+}
+
+.instruction--btn {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.btn {
+    height: 80px;
+    width: 170px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(15, 15, 15);
+    background-color: rgb(240, 240, 240);
+    font-weight: bold;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        background-color: rgb(175, 175, 175);
+    }
+    &:disabled {
+        background-color: red;
+    }
+}
+
+.info {
+    float: right;
+    margin-right: 200px;
+
+    #about {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+    .list {
+        padding: 20px;
+        position: absolute;
+        right: 200px;
+        border: rgb(240, 240, 240) solid;
+        width: 702.313px;
+        height: 250px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        a{
+            display: block;
+            margin: 10px 0;
+        }
+    }
+}
+
+#array {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 300;
 }
