@@ -1,3 +1,6 @@
+
+    // DOM Elements and variables
+
 const image = document.querySelector(".image");
 const button = document.querySelector(".get");
 const save = document.querySelector(".save");
@@ -6,10 +9,14 @@ const array = document.querySelector(".list");
 const hearts = document.querySelector(".hearts");
 const kittenImages = ["Default"]
 
+    // Variables for displaying the time and date
+
 let today = new Date();
 let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 let time = today.getHours() + ":" + today.getMinutes();
 let dateTime = date + ' ' + time;
+
+    // Email Validation function
 
 function ValidateEmail(inputText, function1, function2) {
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -20,9 +27,13 @@ function ValidateEmail(inputText, function1, function2) {
     }
 }
 
+    // Function to show the invalid email warning
+
 function invalidEmail() {
     alert("You have not entered a valid email adress.");
 }
+
+    // Fetch request function for getting images from unsplash 
 
 function renderKitten() {
     fetch(`https://source.unsplash.com/600x400/?cute-kittens`).then((response) => {
@@ -36,6 +47,8 @@ function renderKitten() {
         button.disabled = false; 
     }, 3000);
 }
+
+    // Function the save button
 
 function saveKitten() {
     let kitten = document.createElement("a");
@@ -53,6 +66,8 @@ function saveKitten() {
     kitten.href = img.src;
     save.disabled = true;
 }
+
+    // Event Listeners 
 
 button.addEventListener("click", () => ValidateEmail(textField, renderKitten, invalidEmail));
 save.addEventListener("click", saveKitten);

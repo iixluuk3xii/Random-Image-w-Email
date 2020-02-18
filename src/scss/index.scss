@@ -1,3 +1,6 @@
+
+    // Default page styling 
+
 * {
     background-color: rgb(15, 15, 15);
     color: rgb(240, 240, 240);
@@ -5,6 +8,8 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
+    // Kitten Image
 
 .kitten {
     position: absolute;
@@ -14,12 +19,16 @@
     bottom: 0;
 }
 
+    // Heart Image
+
 .hearts {
     position: absolute;
     width: 300px;
     right: 520px;
     bottom: 90px;
 }
+
+    // Left side of screen
 
 .container {
     margin-left: 200px;
@@ -32,6 +41,8 @@
     font-weight: 300;
     margin-top: -10px;
 }
+
+    // Image Frame
 
 .frame--outline {
     background: rgb(204, 102, 51);
@@ -88,6 +99,8 @@
     }
 }
 
+    // Text field input 
+
 .instruction--field {
     margin-top: 35px;
 }
@@ -102,6 +115,8 @@ input {
     color: rgb(15, 15, 15);
     height: 30px;
 }
+
+    // Buttons
 
 .instruction--btn {
     font-family: 'Dancing Script', cursive;
@@ -129,6 +144,8 @@ input {
         background-color: red;
     }
 }
+
+    // Right side of screen
 
 .info {
     float: right;
