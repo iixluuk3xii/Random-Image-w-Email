@@ -23,6 +23,6 @@
   "homepage": "https://github.com/iixluuk3xii/Random-Image-w-Email#readme",
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "unsplash-js": "^6.0.0"
+    "unsplash-js": "^7.0.15"
   }
 }
